@@ -19,4 +19,12 @@ Install frontend dependencies with npm and test & copy the newly downloaded stat
 
 Run satnogs-db
 
-    docker-compose up -d --build
+    docker compose up -d --build
+
+If you have a denied connection permission error in this step try raising the file's read and write permissions
+
+    sudo chmod 666 /var/run/docker.sock
+
+Create, setup and populate the database with demo data. Your satnogs-db development instance is available in localhost:8000.
+
+    docker-compose exec web djangoctl.sh initialize
