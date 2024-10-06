@@ -29,6 +29,6 @@ If needed, start/restart all docker services
 
     docker compose up -d
 
-Create, setup and populate the database with demo data. Your satnogs-db development instance is available in localhost:8000.
+Create, setup and populate the database with demo data. Satnogs-db development instance is now available in **localhost:8000**.
 
     docker compose exec web djangoctl.sh initialize
