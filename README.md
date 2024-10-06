@@ -25,6 +25,10 @@ If you have a denied connection permission error in this step try raising the fi
 
     sudo chmod 666 /var/run/docker.sock
 
+If needed, start/restart all docker services
+
+    docker compose up -d
+
 Create, setup and populate the database with demo data. Your satnogs-db development instance is available in localhost:8000.
 
-    docker-compose exec web djangoctl.sh initialize
+    docker compose exec web djangoctl.sh initialize
