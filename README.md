@@ -1,5 +1,7 @@
 # PyNOGS
 
+Visualize satellites around the Earth in real time in python.
+
 ## Requirements
 You will need to configure [SatNOGS Network API](https://satnogs.org/2014/10/30/api-on-satnogs-network/), which needs [docker](https://docs.docker.com/get-started/get-docker/#installation) and [docker-compose](https://docs.docker.com/compose/install/).
 
